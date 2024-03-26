@@ -1,0 +1,84 @@
+:root{
+  --shadow:0px 5px 5px rgba(96, 97, 98, 0.1);
+  --brown:  rgb(101, 23, 23);
+}
+
+body{
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.card{
+  background-color: rgb(237, 229, 229);
+  width: 400px;
+  padding: 40px;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: -4px;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input{
+  border: 1px solid var(--brown);
+  padding: 7px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+input:focus{
+  outline: 1px solid var(--brown);
+  
+}
+.btn{
+  background-color: var(--brown);
+  border: 0;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.modal-container{
+
+  position: fixed;
+  top: 0;
+  height: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.483);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  0;
+}
+.modal{
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+.btn--alt{
+  border: 1px solid var(--brown);
+  background-color: white;
+  color: var(--brown);
+  transition: background-color 0.5s ease;
+}
+.btn--alt:hover{
+  background-color: var(--brown);
+  color: white;
+}
+.btn-wrapper{
+  display: flex;
+  gap: 20px;
+}
